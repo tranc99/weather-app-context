@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherComponent from "./WeatherComponent";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
             <li>Flag</li>
             <li>Weather description</li>
           </ol>
+          <h2>The Actual Components</h2>
+          <WeatherComponent />
         </div>
         <div className="col-sm" />
       </div>
