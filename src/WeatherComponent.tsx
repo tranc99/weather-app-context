@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import DescriptionComponent from "./DescriptionComponent";
-import { locales } from "./locale_context";
 import { LocaleContext } from "./locale_context";
 
 const WeatherComponent = props => {
