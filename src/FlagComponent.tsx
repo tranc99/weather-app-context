@@ -4,7 +4,21 @@ const FlagComponent = props => {
   return (
     <React.Fragment>
       <p>Language: English(US)</p>
-      <img src="images/flag-us.jpg" className="card-img-top" alt="..." />
+      <div className="form-group">
+        <label htmlFor="languageSelect">Change Language</label>
+        <select className="form-control" id="languageSelect">
+          <option>English</option>
+          <option>French</option>
+          <option>German</option>
+          <option>Japanese</option>
+        </select>
+      </div>
+      <img
+        src="images/flag-france.png"
+        className="card-img-top"
+        style={{ height: "15rem" }}
+        alt="..."
+      />
     </React.Fragment>
   );
 };
