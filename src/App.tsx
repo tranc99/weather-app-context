@@ -8,9 +8,8 @@ function App() {
         <div className="col-sm" />
         <div className="col-sm-8">
           <h2>Weather App</h2>
-
+          <p>Component Hierarchy</p>
           <ol>
-            <li>Component Hierarchy</li>
             <li>Weather Component</li>
             <li>Welcome</li>
             <li>Flag</li>
