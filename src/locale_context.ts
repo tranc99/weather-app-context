@@ -8,7 +8,7 @@ export const locales = {
     flag_image: "images/flag-us.jpg",
     welcome_announcer: "Welcome, it's 68 Fahrenheit today",
     weather_full_description: "Sunny with a chance of rain. Feels like 75.",
-    wind_details: "WIND DETAILS HERE",
+    wind_details: "Wind: 12 miles/hr",
     humidity_details: "HUMIDITY DETAILS HERE",
     weather_last_updated: "WEATHER LAST UPDATED HERE"
   },
