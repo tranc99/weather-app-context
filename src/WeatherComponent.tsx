@@ -1,19 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import DescriptionComponent from "./DescriptionComponent";
-
-const locales = {
-  english_us: {
-    siteName: "Weather.us",
-    siteBranding: "US weather 24/7"
-  },
-  french_fr: {},
-  german_de: {},
-  japanese_jp: {}
-};
-
-const locale = locales.english_us;
+import { locales } from "./locale_context";
+import { LocaleContext } from "./locale_context";
 
 const WeatherComponent = props => {
+  const locale = useContext(LocaleContext);
+
   return (
     <div className="col-sm-6">
       <h1 className="display-4">

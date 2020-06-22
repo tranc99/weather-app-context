@@ -3,7 +3,7 @@ import React from "react";
 const FlagComponent = props => {
   return (
     <React.Fragment>
-      <p>Language: English(US)</p>
+      <p>Language: English (US)</p>
       <div className="form-group">
         <label htmlFor="languageSelect">Change Language</label>
         <select className="form-control" id="languageSelect">
