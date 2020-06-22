@@ -7,9 +7,7 @@ function App() {
     <div className="container">
       <div className="row">
         <div className="col-sm" />
-        <div className="col-sm-8">
-          <WeatherComponent />
-        </div>
+        <WeatherComponent />
         <div className="col-sm" />
       </div>
     </div>
