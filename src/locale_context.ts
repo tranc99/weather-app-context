@@ -39,35 +39,39 @@ export const locales = {
   },
   german_de: {
     language: {
-      shortName: "English",
-      fullName: "English (US)",
-      changeLanguage: "Change Language",
-      language_str: "Language"
+      shortName: "Deutsche",
+      fullName: "Deutsche (Deutschland)",
+      changeLanguage: "Sprache ändern",
+      language_str: "Sprache"
     },
-    siteName: "Weather.us",
-    siteBranding: "US weather 24/7",
-    flag_image: "FLAG_URL",
-    welcome_announcer: "ANNOUNCER TEXT HERE",
-    weather_full_description: "FULL DESCRIPTION HERE",
-    wind_details: "WIND DETAILS HERE",
-    humidity_details: "HUMIDITY DETAILS HERE",
-    weather_last_updated: "WEATHER LAST UPDATED HERE"
+    siteName: "Weather.deutschland",
+    siteBranding: "Deutschland Wetter 24/7",
+    flag_image: "images/flag-germany.png",
+    welcome_announcer:
+      "Willkommen, heute sind es 20 Grad Celsius.",
+    weather_full_description:
+      "Sonnig mit Regenwahrscheinlichkeit. Fühlt sich an wie 24.",
+    wind_details: "Wind: 19 km / h",
+    humidity_details: "Luftfeuchtigkeit: 38%",
+    weather_last_updated:
+      "Wetter vor 3 Minuten aktualisiert."
   },
   japanese_jp: {
     language: {
-      shortName: "English",
-      fullName: "English (US)",
-      changeLanguage: "Change Language",
-      language_str: "Language"
+      shortName: "日本人",
+      fullName: "日本語（日本）",
+      changeLanguage: "言語を変更",
+      language_str: "言語"
     },
-    siteName: "Weather.us",
-    siteBranding: "US weather 24/7",
-    flag_image: "FLAG_URL",
-    welcome_announcer: "ANNOUNCER TEXT HERE",
-    weather_full_description: "FULL DESCRIPTION HERE",
-    wind_details: "WIND DETAILS HERE",
-    humidity_details: "HUMIDITY DETAILS HERE",
-    weather_last_updated: "WEATHER LAST UPDATED HERE"
+    siteName: "Weather.日本",
+    siteBranding: "日本の天気年中無休",
+    flag_image: "images/flag-japan.png",
+    welcome_announcer: "ようこそ、今日は摂氏20度です。",
+    weather_full_description:
+      "雨の可能性がある晴れ。 24みたいな感じ。",
+    wind_details: "風速：19 km /時",
+    humidity_details: "湿度：38％",
+    weather_last_updated: "天気は3分前に更新されました。"
   }
 };
 console.log(locales.english_us);

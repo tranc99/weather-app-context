@@ -12,7 +12,22 @@ function App() {
   );
 
   const changeLocale = (newLocale) => {
-    setAppLocale(locales.french_fr);
+    switch (newLocale) {
+      case "english_us":
+        setAppLocale(locales.english_us);
+        break;
+      case "french_fr":
+        setAppLocale(locales.french_fr);
+        break;
+      case "german_de":
+        setAppLocale(locales.german_de);
+        break;
+      case "japanese_jp":
+        setAppLocale(locales.japanese_jp);
+        break;
+      default:
+        setAppLocale(locales.english_us);
+    }
   };
 
   return (
