@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LocaleContext } from "./locale_context";
 
-const WelcomeComponent = props => {
-  return <h5 className="card-title">Welcome, it's 68 Fahrenheit today</h5>;
+const WelcomeComponent = (props) => {
+  const locale = useContext(LocaleContext);
+
+  return (
+    <h5 className="card-title">
+      {locale.welcome_announcer}
+    </h5>
+  );
 };
 
 export default WelcomeComponent;

@@ -12,7 +12,7 @@ const DescriptionComponent = (props) => {
       <div className="card-body">
         <WelcomeComponent />
         <p className="card-text">
-          Sunny with a chance of meatballs. Feels like 75.
+          {locale.weather_full_description}
         </p>
         <p className="card-text">
           <em>{locale.wind_details}</em>

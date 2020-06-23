@@ -34,7 +34,7 @@ const FlagComponent = (props) => {
         </select>
       </div>
       <img
-        src="images/flag-france.png"
+        src={locale.flag_image}
         className="card-img-top"
         style={{ height: "15rem" }}
         alt="..."
