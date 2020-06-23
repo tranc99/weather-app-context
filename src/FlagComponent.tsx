@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LocaleContext } from "./locale_context";
 
-const FlagComponent = props => {
+const FlagComponent = (props) => {
+  const locale = useContext(LocaleContext);
+
+  const handleChange = (event) => {
+    alert(event.target.value);
+    const newLocale = event.target.value;
+    const attemptLocaleUpdate = props.onLanguageChange;
+    attemptLocaleUpdate(newLocale);
+    // passed down function(newlocale)
+  };
+
   return (
     <React.Fragment>
-      <p>Language: English (US)</p>
+      <p>
+        {locale.language.language_str}:{" "}
+        {locale.language.fullName}
+      </p>
       <div className="form-group">
-        <label htmlFor="languageSelect">Change Language</label>
-        <select className="form-control" id="languageSelect">
-          <option>English</option>
-          <option>French</option>
-          <option>German</option>
-          <option>Japanese</option>
+        <label htmlFor="languageSelect">
+          {locale.language.changeLanguage}
+        </label>
+        <select
+          className="form-control"
+          id="languageSelect"
+          onChange={handleChange}
+        >
+          <option value="english_us">English</option>
+          <option value="french_fr">Français</option>
+          <option value="german_de">Deutsch</option>
+          <option value="japanese_jp">日本語</option>
         </select>
       </div>
       <img

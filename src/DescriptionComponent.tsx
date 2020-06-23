@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import FlagComponent from "./FlagComponent";
 import WelcomeComponent from "./WelcomeComponent";
+import { LocaleContext } from "./locale_context";
 
-const DescriptionComponent = props => {
+const DescriptionComponent = (props) => {
+  const locale = useContext(LocaleContext);
+
   return (
     <div className="card mb-3">
-      <FlagComponent />
+      <FlagComponent {...props} />
       <div className="card-body">
         <WelcomeComponent />
         <p className="card-text">
           Sunny with a chance of meatballs. Feels like 75.
         </p>
         <p className="card-text">
-          <em>Wind: 12 miles/hr</em>
+          <em>{locale.wind_details}</em>
         </p>
         <p className="card-text">
-          <em>Humidity: 38%</em>
+          <em>{locale.humidity_details}</em>
         </p>
         <p className="card-text">
-          <small className="text-muted">Weather updated 3 mins ago</small>
+          <small className="text-muted">
+            {locale.weather_last_updated}
+          </small>
         </p>
       </div>
     </div>
