@@ -2,7 +2,11 @@ import React, { useContext } from "react";
 import DescriptionComponent from "./DescriptionComponent";
 import { LocaleContext } from "./locale_context";
 
-const WeatherComponent = (props) => {
+interface WeatherComponentProps {
+  onLanguageChange: object;
+}
+
+const WeatherComponent = (props: WeatherComponentProps) => {
   const locale = useContext(LocaleContext);
 
   return (

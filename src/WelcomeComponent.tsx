@@ -1,7 +1,11 @@
 import React, { useContext } from "react";
 import { LocaleContext } from "./locale_context";
 
-const WelcomeComponent = (props) => {
+interface WelcomeComponentProps {
+  onLanguageChange: any;
+}
+
+const WelcomeComponent = (props: WelcomeComponentProps) => {
   const locale = useContext(LocaleContext);
 
   return (

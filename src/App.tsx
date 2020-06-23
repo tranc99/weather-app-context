@@ -11,7 +11,7 @@ function App() {
     locales.english_us
   );
 
-  const changeLocale = (newLocale) => {
+  const changeLocale = (newLocale: string) => {
     switch (newLocale) {
       case "english_us":
         setAppLocale(locales.english_us);

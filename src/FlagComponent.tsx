@@ -1,15 +1,17 @@
 import React, { useContext } from "react";
 import { LocaleContext } from "./locale_context";
 
-const FlagComponent = (props) => {
+interface FlagComponentProps {
+  onLanguageChange: any;
+}
+
+const FlagComponent = (props: FlagComponentProps) => {
   const locale = useContext(LocaleContext);
 
-  const handleChange = (event) => {
-    alert(event.target.value);
+  const handleChange = (event: any) => {
     const newLocale = event.target.value;
-    const attemptLocaleUpdate = props.onLanguageChange;
-    attemptLocaleUpdate(newLocale);
-    // passed down function(newlocale)
+    const performLocaleUpdate = props.onLanguageChange;
+    performLocaleUpdate(newLocale);
   };
 
   return (

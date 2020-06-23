@@ -3,7 +3,13 @@ import FlagComponent from "./FlagComponent";
 import WelcomeComponent from "./WelcomeComponent";
 import { LocaleContext } from "./locale_context";
 
-const DescriptionComponent = (props) => {
+interface DescriptionComponentProps {
+  onLanguageChange: object;
+}
+
+const DescriptionComponent = (
+  props: DescriptionComponentProps
+) => {
   const locale = useContext(LocaleContext);
 
   return (
